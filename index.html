@@ -1,68 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<<head>
   <meta charset="UTF-8">
   <title>Mc Florenz Paningbatan | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header, footer { background-color: #1e1e1e; color: #fff; padding: 20px; text-align: center; }
-    .container { padding: 40px; max-width: 900px; margin: auto; }
-    .project { margin-bottom: 40px; }
-    a { color: #007acc; text-decoration: none; }
-    h1, h2 { margin-top: 0; }
-  </style>
+  
+  <!-- Bootstrap CSS (already in use) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- ✅ Link to your external CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-
-  <header>
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-5">
     <h1>Mc Florenz Paningbatan</h1>
-    <p>Entry-Level Developer | IT Support | Web & Software Projects</p>
+    <p class="lead">Entry-Level Developer | IT Support | Web & Software Projects</p>
   </header>
 
-  <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>I am a passionate entry-level IT professional with experience in web development, software development, and IT support. My focus is on front-end design, troubleshooting, and building useful systems that solve real problems.</p>
+  <!-- Main Content -->
+  <div class="container my-5">
+
+    <!-- About Me -->
+    <section class="mb-5">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a passionate entry-level IT professional with experience in web development, software development, and IT support. My focus is on front-end design, troubleshooting, and building useful systems that solve real problems.
+      </p>
     </section>
 
-    <section>
-      <h2>Projects</h2>
+    <!-- Projects -->
+    <section class="mb-5">
+  <h2 class="section-title">Projects</h2>
 
-      <div class="project">
-        <h3>🔔 Reminder System</h3>
-        <p>A web-based system that alerts nurses of scheduled medications. Built using PHP, JavaScript, AJAX, and MySQL.</p>
-        <p><a href="https://github.com/McFlorenz/ReminderSystem" target="_blank">View Repository</a></p>
+  <!-- Reminder System -->
+  <!-- Reminder System -->
+  <div class="mb-5 card bg-dark bg-opacity-75 border-0 text-white shadow-lg p-4 rounded-4">
+    <h4 class="mb-3">🔔 Reminder System</h4>
+
+    <p>
+      The <strong>Reminder System</strong> is a responsive web-based application designed to assist nurses in tracking and administering patient medications on schedule. It features a real-time alert mechanism that includes both visual and audio alarms — when a medication time is triggered, the corresponding patient card flashes red while an alarm sound plays.
+    </p>
+
+    <p>
+      This system is built to minimize missed medications and optimize nurse efficiency. In addition to its front-end notification system, it also includes a robust backend with a fully integrated database and audit trail. The audit system logs every user interaction, ensuring transparency, traceability, and protection against data manipulation.
+    </p>
+
+    <p>
+      The project was developed using <strong>PHP, JavaScript, HTML, CSS, Bootstrap, AJAX, JSON,</strong> and <strong>Microsoft SQL Server</strong>, ensuring a stable, secure, and efficient solution suited for hospital environments.
+    </p>
+
+    <!-- Reminder Carousel -->
+    <div id="reminderCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-4 overflow-hidden">
+
+        <div class="carousel-item active">
+          <img src="images/reminder1.png" class="d-block w-100" alt="Reminder System Screenshot 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder2.png" class="d-block w-100" alt="Reminder System Screenshot 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder3.png" class="d-block w-100" alt="Reminder System Screenshot 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder4.png" class="d-block w-100" alt="Reminder System Screenshot 4">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder5.png" class="d-block w-100" alt="Reminder System Screenshot 5">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder6.png" class="d-block w-100" alt="Reminder System Screenshot 6">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder7.png" class="d-block w-100" alt="Reminder System Screenshot 7">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder8.png" class="d-block w-100" alt="Reminder System Screenshot 8">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder9.png" class="d-block w-100" alt="Reminder System Screenshot 9">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder10.png" class="d-block w-100" alt="Reminder System Screenshot 10">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder11.png" class="d-block w-100" alt="Reminder System Screenshot 11">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder12.png" class="d-block w-100" alt="Reminder System Screenshot 12">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder13.png" class="d-block w-100" alt="Reminder System Screenshot 13">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder14.png" class="d-block w-100" alt="Reminder System Screenshot 14">
+        </div>
+        <div class="carousel-item">
+          <img src="images/reminder15.png" class="d-block w-100" alt="Reminder System Screenshot 15">
+        </div>
       </div>
 
-      <div class="project">
-        <h3>📦 Stewardship System</h3>
-        <p>An inventory and resource tracking system developed to support community or church resource management. Built using PHP, MySQL, and Bootstrap.</p>
-        <p><a href="https://github.com/McFlorenz/stewardship" target="_blank">View Repository</a></p>
-      </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reminderCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-secondary rounded-circle"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reminderCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-secondary rounded-circle"></span>
+      </button>
+    </div>
+  </div>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript, PHP, SQL, Bootstrap, AJAX</li>
-        <li>Java, C#, C++</li>
-        <li>UI/UX Design, Responsive Layouts</li>
-        <li>PC Troubleshooting, Network Support</li>
+  <!-- Stewardship System -->
+  <div class="mb-5 card bg-dark bg-opacity-75 border-0 text-white shadow-lg p-4 rounded-4">
+    <h4 class="mb-3">📦 Stewardship System</h4>
+
+    <p>
+      The <strong>Stewardship System</strong> is a web-based platform developed to monitor and manage student service hours within a school environment. 
+      Inspired by professional time-in/time-out systems, it ensures that every logged hour reflects actual student service, promoting data integrity and honesty.
+    </p>
+
+    <p>
+      The system eliminates manual logging errors and prevents data manipulation through real-time tracking and secure user actions. 
+      Students can log service hours while administrators verify and audit entries through a centralized dashboard. 
+      Key features include automated calculations, user profiles, activity logs, and data protection controls.
+    </p>
+
+    <p>
+      Built using <strong>PHP, HTML, CSS, Bootstrap, JavaScript, AJAX,</strong> and <strong>JSON</strong>, the system is responsive, user-friendly, and scalable.
+    </p>
+
+    <!-- Carousel -->
+    <div id="stewardCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-4 overflow-hidden">
+
+        <div class="carousel-item active">
+          <img src="images/steward1.png" class="d-block w-100" alt="Stewardship System Screenshot 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward2.png" class="d-block w-100" alt="Stewardship System Screenshot 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward3.png" class="d-block w-100" alt="Stewardship System Screenshot 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward4.png" class="d-block w-100" alt="Stewardship System Screenshot 4">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward5.png" class="d-block w-100" alt="Stewardship System Screenshot 5">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward6.png" class="d-block w-100" alt="Stewardship System Screenshot 6">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward7.png" class="d-block w-100" alt="Stewardship System Screenshot 7">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward8.png" class="d-block w-100" alt="Stewardship System Screenshot 8">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward9.png" class="d-block w-100" alt="Stewardship System Screenshot 9">
+        </div>
+        <div class="carousel-item">
+          <img src="images/steward10.png" class="d-block w-100" alt="Stewardship System Screenshot 10">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#stewardCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-secondary rounded-circle"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#stewardCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-secondary rounded-circle"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Skills -->
+    <section class="mb-5">
+      <h2 class="section-title">Skills</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">HTML, CSS, JavaScript, PHP, SQL, Bootstrap, AJAX</li>
+        <li class="list-group-item">Java, C#, C++</li>
+        <li class="list-group-item">UI/UX Design, Responsive Layouts</li>
+        <li class="list-group-item">PC Troubleshooting, Network Support</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: paningbatanmcflorenz@gmail.com</p>
+    <!-- Contact -->
+    <section class="mb-5">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:paningbatanmcflorenz@gmail.com">paningbatanmcflorenz@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/McFlorenz" target="_blank">McFlorenz</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mc-florenz-paningbatan-64339235a" target="_blank">mc-florenz-paningbatan</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/mc-florenz-paningbatan-64339235a" target="_blank">mc-florenz-paningbatan</a></p>
     </section>
+
   </div>
 
-  <footer>
-    <p>&copy; 2025 Mc Florenz Paningbatan</p>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Mc Florenz Paningbatan</p>
   </footer>
 
+  <!-- ✅ Bootstrap JS (Optional for dropdowns, modals, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
