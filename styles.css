@@ -5,9 +5,9 @@ body {
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
   color: white;
-  background: linear-gradient(-45deg, #1a1a1a, #2c2c2c, #3d3d3d, #1a1a1a);
+  background: linear-gradient(-45deg, #0f1c3f, #2a0845, #450920, #0f1c3f); /* Dark blue, purple, maroon, repeat */
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  animation: gradientBG 20s ease infinite;
   min-height: 100vh;
 }
 
@@ -21,12 +21,6 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
-
-/* Optional: make white text easier to read on dark background */
-.section-title {
-  color: #00bfff;
-  border-color: #00bfff;
 }
 
 .card, .carousel, .list-group-item {
@@ -52,10 +46,13 @@ a:hover {
 }
 
 .carousel img {
-  max-height: 420px;
-  object-fit: cover;
+  max-height: 500px;         /* Adjust if needed */
+  object-fit: contain;       /* Ensures the full image is visible */
+  width: 100%;
+  background-color: #000;    /* Optional: fills empty space around image */
   border-radius: 1rem;
 }
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
